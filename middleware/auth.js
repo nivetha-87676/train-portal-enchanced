@@ -7,6 +7,7 @@
  * Provides fallback mock authentication for local development testing.
  */
 
+const config = require('../config/config');
 const User = require('../models/User');
 
 const authMiddleware = async (req, res, next) => {
@@ -14,8 +15,8 @@ const authMiddleware = async (req, res, next) => {
     const authHeader = req.headers.authorization;
 
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      // In development mode, allow guest access with a warning header
-      if (process.env.NODE_ENV === 'development') {
+      // In development mode, allow guest access with default passenger
+      if (config.env === 'development') {
         req.user = { id: 'usr_guest', name: 'Guest Passenger', email: 'guest@railyatra.in' };
         return next();
       }
