@@ -1,68 +1,96 @@
-# RailYatra — Smart Indian Railway Portal 🚂
+# RailYatra — Frontend (Client-Side)
 
-RailYatra is a modern, feature-rich web portal designed for Indian Railway travelers. It features real-time train tracking powered by OpenStreetMap & Leaflet.js, instant e-ticket booking, interactive PNR status checking, multiple dynamic color themes, and live API integrations.
+> **Branch:** `frontend`  
+> **Parent:** `main`
 
----
-
-## 🌟 Key Features
-
-- 📋 **Ticket Booking**: Fast booking interface with instant e-ticket generation, passenger details validation, and multiple payment methods (UPI, GPay, PhonePe, Cards, Net Banking).
-- 📍 **Live Train Tracking**: Real-time GPS map tracking along active Indian railway routes with animated train position indicators using Leaflet.js.
-- 🎨 **Dynamic Theme Switcher**: 6 custom theme presets (Classic Red, Ocean Blue, Forest Green, Royal Purple, Sunset Orange, Dark Mode).
-- 🎫 **PNR Status Checker**: Instant PNR lookup with simulated status responses and booking history.
-- 🔌 **API Demos & Case Studies**: Demonstrations of `fetch()` async requests, HTTP status codes, and architecture breakdowns (REST vs SOAP, JWT Auth).
-- 🕒 **Live Station Clock & Ticker**: Real-time time display and continuous scrolling train delay updates.
+This branch contains **only the client-side code** for the RailYatra Smart Indian Railway Portal. All server-side logic lives in the [`backend`](https://github.com/nivetha-87676/train-portal-enchanced/tree/backend) branch.
 
 ---
 
-## 📁 File Structure
+## 📁 Directory Structure
 
 ```
-train-portal-enchanced/
-├── index.html        # Clean HTML5 markup & semantic structure
+frontend/
+├── index.html          # Main HTML5 page — all sections (Home, Booking, Tracking, API, About, Auth)
 ├── css/
-│   └── style.css     # Modular design system, themes, and animations
+│   └── style.css       # Complete design system — 6 themes, responsive layout, animations
 ├── js/
-│   └── script.js    # Application logic, state management & map rendering
-├── .gitignore        # Git ignore rules for static web projects
-└── README.md         # Project documentation
+│   └── script.js       # Client app logic — SPA routing, form handling, Leaflet map, API fetch calls
+├── assets/             # Static images, icons, and media files
+│   └── .gitkeep
+├── package.json        # Frontend dependencies & dev server scripts
+├── .gitignore          # Excludes node_modules, dist, build artifacts, .env
+└── README.md           # This file
 ```
 
 ---
 
-## 🚀 How to Run Locally
+## 🔑 Key Files
 
-### Option 1: Direct File Opening (Quickest)
-Simply double-click `index.html` or open it directly in any modern web browser (Chrome, Firefox, Edge, Safari).
+| File | Purpose |
+|:---|:---|
+| `index.html` | Single-page app with 6 sections: Home, Book Ticket, Live Tracking, API Data, About, Sign Up/Login |
+| `css/style.css` | CSS custom properties theming system (Classic Red, Ocean Blue, Forest Green, Royal Purple, Sunset Orange, Dark Mode), responsive media queries, keyframe animations |
+| `js/script.js` | Client-side JavaScript: SPA page navigation, ticket booking form with validation, Leaflet.js live train map, PNR status checker, live clock, theme switcher, auth state management via localStorage, fetch API demos |
 
-### Option 2: Local Web Server (Recommended)
+---
 
-Using **VS Code Live Server**:
-1. Open the project folder in VS Code.
-2. Click **Go Live** at the bottom right status bar.
+## 🚀 How to Run
 
-Using **Python**:
+### Quick Start (No Install Required)
 ```bash
-# Python 3
-python -m http.server 8000
+# Open index.html directly in a browser
+start index.html
 ```
-Open your browser and navigate to `http://localhost:8000`.
 
-Using **Node.js (`npx serve`)**:
+### Dev Server with Live Reload
 ```bash
-npx serve .
+npm run dev
+# → Opens http://localhost:8080 with live reload
+```
+
+### Alternative Servers
+```bash
+# Python
+python -m http.server 8080
+
+# npx serve
+npx serve . -l 8080
 ```
 
 ---
 
-## 🛠️ Built With
+## 🔗 API Integration
 
-- **HTML5** & **CSS3** (Custom properties & responsive layout)
-- **JavaScript (ES6+)**
-- **Leaflet.js & OpenStreetMap** (Interactive live mapping)
-- **Google Fonts** (Playfair Display, Rajdhani, Noto Sans)
+This frontend communicates with the backend API at `http://localhost:5000/api/`.
+
+| Frontend Action | Backend Endpoint |
+|:---|:---|
+| Search trains | `GET /api/trains/search?from=NDLS&to=BCT` |
+| Book ticket | `POST /api/bookings` |
+| Check PNR | `GET /api/bookings/pnr/:pnr` |
+| Track train | `GET /api/tracking/:trainNo` |
+| Register user | `POST /api/auth/register` |
+| Login user | `POST /api/auth/login` |
+
+> The frontend currently also works standalone with simulated data (no backend required).
+
+---
+
+## 🔀 Branch Merge Workflow
+
+```
+main ────────────────────────────────────────→
+  ├── frontend (this branch) ── PR → merge →
+  └── backend ──────────────── PR → merge →
+```
+
+1. Create a **Pull Request** from `frontend` → `main`
+2. Request code review from team
+3. After approval, **merge** into `main`
+4. Final `main` branch will contain both frontend and backend as a full-stack monorepo
 
 ---
 
 ## 👤 Author
-Created by **Nivetha** ([`nivetha-87676`](https://github.com/nivetha-87676))
+**Nivetha** — [`nivetha-87676`](https://github.com/nivetha-87676)

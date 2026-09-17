@@ -1,19 +1,38 @@
-# Operating System Files
+# ── OS Files ──
 .DS_Store
 Thumbs.db
 desktop.ini
 *.tmp
 
-# Editor Directories
+# ── Editor/IDE ──
 .vscode/
 .idea/
 *.swp
+*.swo
+*.sublime-*
 
-# Logs and Temporary Scratch Files
-*.log
-raw_source.html
-
-# Dependencies (if build tooling added later)
+# ── Dependencies ──
 node_modules/
+
+# ── Build Artifacts ──
 dist/
+build/
 .cache/
+.parcel-cache/
+*.min.js
+*.min.css
+*.map
+
+# ── Environment ──
+.env
+.env.local
+.env.production
+
+# ── Logs ──
+*.log
+npm-debug.log*
+
+# ── Misc ──
+.DS_Store
+*.bak
+*.orig
