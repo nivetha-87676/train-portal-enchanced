@@ -1,0 +1,141 @@
+[
+  {
+    "id": "22436",
+    "trainNumber": "22436",
+    "name": "Vande Bharat Express",
+    "type": "Superfast / Semi-High Speed",
+    "from": "NDLS",
+    "fromStation": "New Delhi",
+    "to": "BSB",
+    "toStation": "Varanasi Junction",
+    "departureTime": "06:00",
+    "arrivalTime": "14:00",
+    "duration": "8h 00m",
+    "distanceKm": 759,
+    "runsOn": ["Tue", "Wed", "Fri", "Sat", "Sun"],
+    "classes": [
+      { "code": "CC", "name": "AC Chair Car", "fare": 1750, "availableSeats": 42 },
+      { "code": "EC", "name": "Executive Anubhuti", "fare": 3300, "availableSeats": 12 }
+    ],
+    "currentStatus": {
+      "status": "On Time",
+      "delayMinutes": 0,
+      "currentStation": "CNB",
+      "currentStationName": "Kanpur Central",
+      "speedKmH": 130,
+      "lastUpdated": "Just now"
+    },
+    "route": [
+      { "code": "NDLS", "station": "New Delhi", "arr": "Source", "dep": "06:00", "halt": 0, "day": 1, "distance": 0, "lat": 28.6427, "lng": 77.2195 },
+      { "code": "CNB", "station": "Kanpur Central", "arr": "10:08", "dep": "10:10", "halt": 2, "day": 1, "distance": 440, "lat": 26.4547, "lng": 80.3507 },
+      { "code": "PRYJ", "station": "Prayagraj Junction", "arr": "12:08", "dep": "12:10", "halt": 2, "day": 1, "distance": 634, "lat": 25.4484, "lng": 81.8333 },
+      { "code": "BSB", "station": "Varanasi Junction", "arr": "14:00", "dep": "Terminus", "halt": 0, "day": 1, "distance": 759, "lat": 25.3284, "lng": 82.9868 }
+    ]
+  },
+  {
+    "id": "12302",
+    "trainNumber": "12302",
+    "name": "Howrah Rajdhani Express",
+    "type": "Rajdhani Express",
+    "from": "NDLS",
+    "fromStation": "New Delhi",
+    "to": "HWH",
+    "toStation": "Howrah Junction",
+    "departureTime": "16:50",
+    "arrivalTime": "09:55",
+    "duration": "17h 05m",
+    "distanceKm": 1451,
+    "runsOn": ["Mon", "Tue", "Wed", "Thu", "Sat", "Sun"],
+    "classes": [
+      { "code": "1A", "name": "AC First Class", "fare": 4850, "availableSeats": 6 },
+      { "code": "2A", "name": "AC 2 Tier", "fare": 2980, "availableSeats": 24 },
+      { "code": "3A", "name": "AC 3 Tier", "fare": 2150, "availableSeats": 58 }
+    ],
+    "currentStatus": {
+      "status": "Delayed",
+      "delayMinutes": 15,
+      "currentStation": "DDU",
+      "currentStationName": "Pt. Deen Dayal Upadhyaya Jn",
+      "speedKmH": 115,
+      "lastUpdated": "2 mins ago"
+    },
+    "route": [
+      { "code": "NDLS", "station": "New Delhi", "arr": "Source", "dep": "16:50", "halt": 0, "day": 1, "distance": 0, "lat": 28.6427, "lng": 77.2195 },
+      { "code": "CNB", "station": "Kanpur Central", "arr": "21:32", "dep": "21:37", "halt": 5, "day": 1, "distance": 440, "lat": 26.4547, "lng": 80.3507 },
+      { "code": "PRYJ", "station": "Prayagraj Junction", "arr": "23:43", "dep": "23:45", "halt": 2, "day": 1, "distance": 634, "lat": 25.4484, "lng": 81.8333 },
+      { "code": "DDU", "station": "Pt. Deen Dayal Upadhyaya", "arr": "01:42", "dep": "01:52", "halt": 10, "day": 2, "distance": 787, "lat": 25.2818, "lng": 83.1186 },
+      { "code": "DHN", "station": "Dhanbad Junction", "arr": "05:45", "dep": "05:50", "halt": 5, "day": 2, "distance": 1192, "lat": 23.7957, "lng": 86.4304 },
+      { "code": "HWH", "station": "Howrah Junction", "arr": "09:55", "dep": "Terminus", "halt": 0, "day": 2, "distance": 1451, "lat": 22.5838, "lng": 88.3426 }
+    ]
+  },
+  {
+    "id": "12004",
+    "trainNumber": "12004",
+    "name": "Lucknow Shatabdi Express",
+    "type": "Shatabdi Express",
+    "from": "NDLS",
+    "fromStation": "New Delhi",
+    "to": "LJN",
+    "toStation": "Lucknow Junction",
+    "departureTime": "06:10",
+    "arrivalTime": "12:40",
+    "duration": "6h 30m",
+    "distanceKm": 512,
+    "runsOn": ["Daily"],
+    "classes": [
+      { "code": "CC", "name": "AC Chair Car", "fare": 1165, "availableSeats": 65 },
+      { "code": "EC", "name": "Executive Class", "fare": 2125, "availableSeats": 18 }
+    ],
+    "currentStatus": {
+      "status": "On Time",
+      "delayMinutes": 0,
+      "currentStation": "GZB",
+      "currentStationName": "Ghaziabad Junction",
+      "speedKmH": 110,
+      "lastUpdated": "Just now"
+    },
+    "route": [
+      { "code": "NDLS", "station": "New Delhi", "arr": "Source", "dep": "06:10", "halt": 0, "day": 1, "distance": 0, "lat": 28.6427, "lng": 77.2195 },
+      { "code": "GZB", "station": "Ghaziabad Junction", "arr": "06:48", "dep": "06:50", "halt": 2, "day": 1, "distance": 26, "lat": 28.6692, "lng": 77.4538 },
+      { "code": "ALJN", "station": "Aligarh Junction", "arr": "07:47", "dep": "07:49", "halt": 2, "day": 1, "distance": 131, "lat": 27.8974, "lng": 78.0880 },
+      { "code": "CNB", "station": "Kanpur Central", "arr": "11:20", "dep": "11:25", "halt": 5, "day": 1, "distance": 435, "lat": 26.4547, "lng": 80.3507 },
+      { "code": "LJN", "station": "Lucknow Junction", "arr": "12:40", "dep": "Terminus", "halt": 0, "day": 1, "distance": 512, "lat": 26.8322, "lng": 80.9200 }
+    ]
+  },
+  {
+    "id": "12952",
+    "trainNumber": "12952",
+    "name": "Mumbai Tejas Rajdhani",
+    "type": "Tejas Rajdhani",
+    "from": "NDLS",
+    "fromStation": "New Delhi",
+    "to": "MMCT",
+    "toStation": "Mumbai Central",
+    "departureTime": "16:55",
+    "arrivalTime": "08:35",
+    "duration": "15h 40m",
+    "distanceKm": 1384,
+    "runsOn": ["Daily"],
+    "classes": [
+      { "code": "1A", "name": "AC First Class", "fare": 4900, "availableSeats": 8 },
+      { "code": "2A", "name": "AC 2 Tier", "fare": 3050, "availableSeats": 35 },
+      { "code": "3A", "name": "AC 3 Tier", "fare": 2240, "availableSeats": 70 }
+    ],
+    "currentStatus": {
+      "status": "On Time",
+      "delayMinutes": 0,
+      "currentStation": "KOTA",
+      "currentStationName": "Kota Junction",
+      "speedKmH": 130,
+      "lastUpdated": "4 mins ago"
+    },
+    "route": [
+      { "code": "NDLS", "station": "New Delhi", "arr": "Source", "dep": "16:55", "halt": 0, "day": 1, "distance": 0, "lat": 28.6427, "lng": 77.2195 },
+      { "code": "KOTA", "station": "Kota Junction", "arr": "21:30", "dep": "21:40", "halt": 10, "day": 1, "distance": 465, "lat": 25.1804, "lng": 75.8354 },
+      { "code": "RTM", "station": "Ratlam Junction", "arr": "00:48", "dep": "00:50", "halt": 2, "day": 2, "distance": 732, "lat": 23.3315, "lng": 75.0367 },
+      { "code": "BRC", "station": "Vadodara Junction", "arr": "03:50", "dep": "03:58", "halt": 8, "day": 2, "distance": 993, "lat": 22.3072, "lng": 73.1812 },
+      { "code": "BVI", "station": "Borivali", "arr": "07:57", "dep": "07:59", "halt": 2, "day": 2, "distance": 1355, "lat": 19.2288, "lng": 72.8541 },
+      { "code": "MMCT", "station": "Mumbai Central", "arr": "08:35", "dep": "Terminus", "halt": 0, "day": 2, "distance": 1384, "lat": 18.9696, "lng": 72.8193 }
+    ]
+  }
+]
