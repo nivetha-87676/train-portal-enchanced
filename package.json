@@ -1,0 +1,14 @@
+{
+  "name": "railyatra-frontend",
+  "version": "1.0.0",
+  "description": "RailYatra — Smart Indian Railway Portal (Frontend)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server --port=8080 --open=index.html",
+    "start": "npx live-server --port=8080 --open=index.html"
+  },
+  "keywords": ["railway", "train", "booking", "tracking", "irctc", "frontend"],
+  "author": "Nivetha (nivetha-87676)",
+  "license": "MIT",
+  "devDependencies": {}
+}

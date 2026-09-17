@@ -1,5 +1,11 @@
 'use strict';
 
+// ── API Configuration ──
+// Base URL for the backend API server (see 'backend' branch)
+// When running locally, the backend runs on port 5000
+// In production, update this to your deployed backend URL
+const API_BASE_URL = 'http://localhost:5000/api';
+
 // ── Payment Box State & Functions ──
 let selectedPayment = "Google Pay";
 
