@@ -18,6 +18,7 @@ frontend/
 │   └── script.js       # Client app logic — SPA routing, form handling, Leaflet map, API fetch calls
 ├── assets/             # Static images, icons, and media files
 │   └── .gitkeep
+├── vercel.json         # Vercel deployment configuration (headers, caching)
 ├── package.json        # Frontend dependencies & dev server scripts
 ├── .gitignore          # Excludes node_modules, dist, build artifacts, .env
 └── README.md           # This file
@@ -56,6 +57,25 @@ python -m http.server 8080
 
 # npx serve
 npx serve . -l 8080
+```
+
+---
+
+## ⚡ Deploy to Vercel
+
+### Option 1: 1-Click Git Import (Recommended)
+1. Go to [vercel.com/new](https://vercel.com/new).
+2. Select your GitHub repository: **`nivetha-87676/train-portal-enchanced`**.
+3. Under **Branch**, select `frontend` (or `main`).
+4. Framework Preset: Leave as **Other** (Static site).
+5. Click **Deploy**. Your app will be live with an SSL HTTPS link in seconds!
+
+### Option 2: Deploy using Vercel CLI
+```bash
+# In the project root on the frontend branch:
+npx vercel
+# Follow the prompt to link or deploy, then run for production:
+npx vercel --prod
 ```
 
 ---
